@@ -3,8 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    user-select: none;
     text-decoration: none;
+    user-select: none;
     user-zoom: none;
     list-style: none;
 }
@@ -17,9 +17,10 @@
     --titfont: 'Reem Kufi Ink', sans-serif;
     --pfont:font-family: 'Source Sans Pro', sans-serif;
 }
+/* root styleing ends */
 .hdings{
     font-family: var(--hdfront);
-    font-size: 3.7em;
+    font-size: 3.4em;
     font-weight: bold ;
     letter-spacing: 3.9px;
 }
@@ -38,6 +39,11 @@ p{
     color: var(--litcolor);
     background-color: var(--altcolor);
     padding: 5px 10px;
+    border: 1px solid var(--altcolor);
+}
+.shadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+     0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .btn1:hover{
     background: none;
@@ -50,7 +56,6 @@ nav{
     width: auto;
     height:10vh;
     padding: 0 30px;
-    
 }
 #brand{
     font-family: var(--hdfront);
@@ -64,6 +69,9 @@ nav a{
 nav  a {
     color: var(--bikcolor);
     font-family: var(--hdfront);
+}
+ul li a:hover{
+    border-bottom: 2px solid var(--altcolor);
 }
 /* Navbar styling ends */
 /* Main Styling */
@@ -79,4 +87,265 @@ main{
 .mainbox img {
     display: block;
     margin: 0px auto;   
+}
+/* Main Styling Ends */
+#products{
+    width: auto;
+    height: 80vh;
+    margin-top:15vh;
+    align-items: center;
+    justify-content: space-between;
+}
+#products h3{
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    color: var(--altcolor);
+    font-family: var(--titfont);
+}
+#products p{
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+}
+#products div{
+    width: auto;
+    height:65% ;
+    padding: 3% 6%;
+}
+#products div .products{
+    width: 20%;
+    background-color:var(--litcolor);
+    height: 100%;
+    border-radius: 6%;
+}
+.btn2{
+    background-color: #000;
+    color: var(--litcolor);
+    padding: 10px 30px ;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+.btn2:hover{
+    background-color: var(--litcolor);
+    border: 1px solid var(--bikcolor);
+    color: var(--bikcolor);
+    border-radius: 3px;
+}
+#about{
+    width: auto;
+    height: 70vh;
+    display: flex;
+    margin: 20vh 0;
+    margin-right:10vh;
+
+}
+.about-box1{
+    width: 40%;
+    height: 100%;
+    border-radius: 5px;
+    margin-right: 5%;
+    align-items: center;
+    justify-content: center;
+}
+.about-box2{
+    width: 50%;
+    height:85%;
+    margin: auto 0;
+}
+#about .about-box2 h3{
+    font-weight: bolder;
+    color: var(--altcolor);
+    font-family: var(--titfont);
+}
+#about .about-box2 h2{
+    font-size: 2.5em;
+}
+#about .about-box2 div{
+    width: auto;
+    height: 20%;
+    margin-top: 5%;
+    display: flex;
+}
+#about .about-box2 div span{
+    margin-right: auto;
+}
+#about .about-box2 div span .n{
+    color: var(--altcolor);
+    font-weight: bolder;
+    font-size: 1.3em;
+    font-family: var(--titfont);
+}
+#about .about-box2 div span .j{
+    font-size: 1.1em;
+    font-weight: bold;
+    font-family: var(--titfont);
+}
+#about .about-box2 p{
+    font-family: var(--pfont);
+}
+#service{
+width: auto;
+height: 80vh;
+padding: 0% 10%;
+}
+#service h2{
+    font-family: var(--hdfront);
+    font-size: 2.5em;
+    text-align: center;
+}
+ #service-row{
+    width: auto;
+    height: 85%;
+    display: flex;
+    margin-bottom: 100px;
+}
+ .service-box-container{
+    width: 30%;
+    height: 100%;
+    margin: 5% auto;
+    justify-content: center;
+    align-items: center;
+}
+.service-box{
+    width: auto;
+    height: 49%;
+    background-color: var(--litcolor);
+    margin-bottom: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+     0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     border-radius: 5%;
+}
+#testimonials{
+    width: auto;
+    height: 90vh;
+    margin: 40vh 0 20vh;
+    padding: 0 10%;
+}
+#testimonials h3{
+    font-weight: bolder;
+    color: var(--altcolor);
+    font-family: var(--titfont);
+    text-align: center;
+    font-size: 1.4em;
+}
+#testimonials h2{
+    font-size: 2.5em;
+    font-family: var(--hdfront);
+    text-align: center;
+}
+#testimonials div{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+#testimonials div .testimony-box{
+    height: 90%;
+    background-color: var(--litcolor);
+    display: block;
+
+}
+#testimonials div p{
+    text-align: left;
+    font-family: var(--pfont);
+    margin-left: 20px;
+}
+.ceo{
+    margin-top: 6%;
+    font-weight: bolder;
+    font-size: larger;
+    font-family: var(--pfont);
+}
+#FAQ{
+    padding: 0 10%;
+    height: fit-content;
+    margin-bottom: 20vh;
+}
+#FAQ h2{
+    text-align: center;
+    font-family: var(--hdfront);
+    font-size: 2em;
+    font-weight: 500px;
+}
+#FAQ a{
+    color: #000;
+}
+#FAQ .question:hover{
+    background-color: rgb(221, 220, 220);
+}
+#FAQ .question{
+    margin-bottom: 20px;
+    padding: 15px 10px;
+    font-family: var(--pfont);
+    font-weight: 1000;
+    border: 1px solid grey;
+}
+#subscribe{
+    width: auto;
+    height: fit-content;
+    justify-content: center;
+}
+#subscribe h2{
+    text-align: center;
+    font-family: var(--hdfront);
+    font-size: 3em;
+}
+#subscribe p{
+    text-align: center;
+    color: grey;
+    font-family: var(--pfont);
+    font-size: 1.2em;
+}
+.email{
+    width: 20%;
+    height: 30px;
+    margin-left:38% ;
+}
+.btn3{
+    width: 100px;
+    height: 30px;
+    background-color: var(--altcolor);
+    border: 1px solid var(--altcolor);
+    color: var(--litcolor);
+}
+.btn3:hover{
+    background-color: rgb(255, 149, 2);
+}
+footer{
+    margin-top: 100px;
+    height: 300px;
+    background-color: var(--bikcolor);
+    width: auto;
+    padding: 3% 5% 0;
+    display: block;
+}
+.footercontainer{
+    display:flex;
+    justify-content: space-between;
+    
+}
+.footerbox{
+    width: 18%;
+    height: 70%;
+    
+}
+footer .footercontainer div h3{
+    font-family: var(--titfont);
+    color: var(--litcolor);
+}
+footer .footercontainer div p{
+    margin: 10px 0;
+    color: grey;
+}
+#copyright{
+    border-top:1px solid grey;
+    width: auto;
+    height: 30%;
+    text-align: center;
+    background-color: var(--bikcolor);
+    color: grey;
+    padding: 15px 0;
+    font-family: var(--pfont);
 }
